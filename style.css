@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ebf5fc;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+.container .card
+{
+  width: 320px;
+  height: 353px;
+  margin: 20px;
+  padding: 40px 30px;
+  background: #ebf5fc;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
+}
+.container .card:hover
+{
+  box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.container .card .imgBx
+{
+  position: relative;
+  text-align: center;
+}
+.container .card .imgBx img
+{
+  max-width: 120px;
+}
+.container .card .contentBx
+{
+  position: relative;
+  margin-top: 10px;
+  height: 170px;
+  text-align: center;
+}
+.container .card .contentBx h2
+{
+  color: #32a3b1;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.new-item-badge {
+    background: #92b7bd;
+    z-index: 999;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 70%;
+    width: 100px;
+    top: -17px;
+    left: -10px;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+.container .card .contentBx h4
+{
+  color: #32a3b1;
+  font-weight: 500;
+  font-size:0.8em;
+  letter-spacing: 2px;
+}
+.container .card .contentBx p
+{
+  height: 48px;
+  color: #32a3b1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.container .card .contentBx a
+{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  color: #32a3b1;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255,255,255,1), 4px 4px 15px rgba(0,0,0,0.1);
+}
+.container .card .contentBx a:hover
+{
+  box-shadow: inset -4px -4px 10px rgba(255,255,255,0.5), inset 4px 4px 10px rgba(0,0,0,0.1);
+}
+.container .card a:hover span
+{
+  display: block;
+  transform: scale(0.98);
+}
+.container .card:hover .imgBx,
+.container .card:hover .contentBx
+{
+  transform: scale(0.98);
+}
+
