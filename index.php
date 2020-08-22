@@ -8,6 +8,7 @@
     <body>
 <div class="container">
 <?php
+    require_once('api.php');
     $json = file_get_contents('github.json');
     $data=json_decode($json,true);
     $length=sizeof($data);   
